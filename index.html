@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Timezone Clock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🕐 Global Time Zones</h1>
+      <p>Real-time clock across the world</p>
+    </div>
+
+    <div class="clock-grid" id="clockGrid">
+      <!-- Clocks will be inserted here by JavaScript -->
+    </div>
+
+    <div class="controls">
+      <button id="addClockBtn" class="btn btn-primary">+ Add Time Zone</button>
+      <button id="resetBtn" class="btn btn-secondary">Reset</button>
+    </div>
+
+    <!-- Modal for adding new timezone -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add a Time Zone</h2>
+        <select id="timezoneSelect" class="timezone-select">
+          <!-- Options will be populated by JavaScript -->
+        </select>
+        <button id="confirmBtn" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
